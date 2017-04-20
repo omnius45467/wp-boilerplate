@@ -26,29 +26,31 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="container">
-
+		<div class="container-fluid">
 			<!-- header -->
-			<header class="header clear" role="banner">
+			<header>
 					<div class="row">
-						<div class="col-md-12">
-							<!-- logo -->
-							<div class="logo">
-								<a href="<?php echo home_url(); ?>">
-									<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-									<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-								</a>
-							</div>
-							<!-- /logo -->
 
 							<!-- nav -->
-							<nav class="nav" role="navigation">
-								<?php html5blank_nav(); ?>
+							<nav class="navbar navbar-default" role="navigation">
+								<div class="container-fluid">
+									<div class="logo">
+										<a href="<?php echo home_url(); ?>">
+											<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script-->
+											<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" navbar-collapse collapseclass="logo-img"/>
+										</a>
+									</div>
+									<div id="navbar" class="navbar-collapse collapse">
+										<ul class="nav navbar-nav">
+											<?php html5blank_nav(); ?>
+										</ul>
+									</div>
+								</div>
+
 							</nav>
 							<!-- /nav -->
+						<div class="col-md-12">
 						</div>
 					</div>
-
-
 			</header>
 			<!-- /header -->
